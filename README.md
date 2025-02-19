@@ -35,24 +35,28 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0501-find-mode-in-binary-search-tree](https://github.com/seodalzzz/LeetCode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/seodalzzz/LeetCode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0933-increasing-order-search-tree](https://github.com/seodalzzz/LeetCode/tree/master/0933-increasing-order-search-tree) |
+| [0975-range-sum-of-bst](https://github.com/seodalzzz/LeetCode/tree/master/0975-range-sum-of-bst) |
 ## Depth-First Search
 |  |
 | ------- |
 | [0501-find-mode-in-binary-search-tree](https://github.com/seodalzzz/LeetCode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/seodalzzz/LeetCode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0933-increasing-order-search-tree](https://github.com/seodalzzz/LeetCode/tree/master/0933-increasing-order-search-tree) |
+| [0975-range-sum-of-bst](https://github.com/seodalzzz/LeetCode/tree/master/0975-range-sum-of-bst) |
 ## Binary Search Tree
 |  |
 | ------- |
 | [0501-find-mode-in-binary-search-tree](https://github.com/seodalzzz/LeetCode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/seodalzzz/LeetCode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0933-increasing-order-search-tree](https://github.com/seodalzzz/LeetCode/tree/master/0933-increasing-order-search-tree) |
+| [0975-range-sum-of-bst](https://github.com/seodalzzz/LeetCode/tree/master/0975-range-sum-of-bst) |
 ## Binary Tree
 |  |
 | ------- |
 | [0501-find-mode-in-binary-search-tree](https://github.com/seodalzzz/LeetCode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/seodalzzz/LeetCode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0933-increasing-order-search-tree](https://github.com/seodalzzz/LeetCode/tree/master/0933-increasing-order-search-tree) |
+| [0975-range-sum-of-bst](https://github.com/seodalzzz/LeetCode/tree/master/0975-range-sum-of-bst) |
 ## Linked List
 |  |
 | ------- |
