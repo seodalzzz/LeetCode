@@ -44,4 +44,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0933-increasing-order-search-tree](https://github.com/seodalzzz/LeetCode/tree/master/0933-increasing-order-search-tree) |
+## Linked List
+|  |
+| ------- |
+| [0021-merge-two-sorted-lists](https://github.com/seodalzzz/LeetCode/tree/master/0021-merge-two-sorted-lists) |
+## Recursion
+|  |
+| ------- |
+| [0021-merge-two-sorted-lists](https://github.com/seodalzzz/LeetCode/tree/master/0021-merge-two-sorted-lists) |
 <!---LeetCode Topics End-->
