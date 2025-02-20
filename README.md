@@ -25,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/seodalzzz/LeetCode/tree/master/0013-roman-to-integer) |
+| [0647-palindromic-substrings](https://github.com/seodalzzz/LeetCode/tree/master/0647-palindromic-substrings) |
 ## Stack
 |  |
 | ------- |
@@ -80,9 +81,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/seodalzzz/LeetCode/tree/master/0234-palindrome-linked-list) |
+| [0647-palindromic-substrings](https://github.com/seodalzzz/LeetCode/tree/master/0647-palindromic-substrings) |
 | [0908-middle-of-the-linked-list](https://github.com/seodalzzz/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/seodalzzz/LeetCode/tree/master/0799-minimum-distance-between-bst-nodes) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0647-palindromic-substrings](https://github.com/seodalzzz/LeetCode/tree/master/0647-palindromic-substrings) |
 <!---LeetCode Topics End-->
