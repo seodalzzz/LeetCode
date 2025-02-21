@@ -25,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/seodalzzz/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0013-roman-to-integer](https://github.com/seodalzzz/LeetCode/tree/master/0013-roman-to-integer) |
 | [0647-palindromic-substrings](https://github.com/seodalzzz/LeetCode/tree/master/0647-palindromic-substrings) |
 | [2816-lexicographically-smallest-palindrome](https://github.com/seodalzzz/LeetCode/tree/master/2816-lexicographically-smallest-palindrome) |
@@ -82,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/seodalzzz/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0234-palindrome-linked-list](https://github.com/seodalzzz/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0647-palindromic-substrings](https://github.com/seodalzzz/LeetCode/tree/master/0647-palindromic-substrings) |
 | [0908-middle-of-the-linked-list](https://github.com/seodalzzz/LeetCode/tree/master/0908-middle-of-the-linked-list) |
@@ -93,5 +95,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/seodalzzz/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0647-palindromic-substrings](https://github.com/seodalzzz/LeetCode/tree/master/0647-palindromic-substrings) |
 <!---LeetCode Topics End-->
