@@ -25,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0009-palindrome-number](https://github.com/seodalzzz/LeetCode/tree/master/0009-palindrome-number) |
 | [0013-roman-to-integer](https://github.com/seodalzzz/LeetCode/tree/master/0013-roman-to-integer) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/seodalzzz/LeetCode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
+| [2481-strictly-palindromic-number](https://github.com/seodalzzz/LeetCode/tree/master/2481-strictly-palindromic-number) |
 ## String
 |  |
 | ------- |
@@ -92,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/seodalzzz/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0647-palindromic-substrings](https://github.com/seodalzzz/LeetCode/tree/master/0647-palindromic-substrings) |
 | [0908-middle-of-the-linked-list](https://github.com/seodalzzz/LeetCode/tree/master/0908-middle-of-the-linked-list) |
+| [2481-strictly-palindromic-number](https://github.com/seodalzzz/LeetCode/tree/master/2481-strictly-palindromic-number) |
 | [2816-lexicographically-smallest-palindrome](https://github.com/seodalzzz/LeetCode/tree/master/2816-lexicographically-smallest-palindrome) |
 ## Breadth-First Search
 |  |
@@ -106,4 +108,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2475-largest-palindromic-number](https://github.com/seodalzzz/LeetCode/tree/master/2475-largest-palindromic-number) |
+## Brainteaser
+|  |
+| ------- |
+| [2481-strictly-palindromic-number](https://github.com/seodalzzz/LeetCode/tree/master/2481-strictly-palindromic-number) |
 <!---LeetCode Topics End-->
