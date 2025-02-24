@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0624-maximum-distance-in-arrays](https://github.com/seodalzzz/LeetCode/tree/master/0624-maximum-distance-in-arrays) |
+| [1252-break-a-palindrome](https://github.com/seodalzzz/LeetCode/tree/master/1252-break-a-palindrome) |
 | [2816-lexicographically-smallest-palindrome](https://github.com/seodalzzz/LeetCode/tree/master/2816-lexicographically-smallest-palindrome) |
 ## Hash Table
 |  |
@@ -28,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0005-longest-palindromic-substring](https://github.com/seodalzzz/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0013-roman-to-integer](https://github.com/seodalzzz/LeetCode/tree/master/0013-roman-to-integer) |
 | [0647-palindromic-substrings](https://github.com/seodalzzz/LeetCode/tree/master/0647-palindromic-substrings) |
+| [1252-break-a-palindrome](https://github.com/seodalzzz/LeetCode/tree/master/1252-break-a-palindrome) |
 | [2816-lexicographically-smallest-palindrome](https://github.com/seodalzzz/LeetCode/tree/master/2816-lexicographically-smallest-palindrome) |
 ## Stack
 |  |
