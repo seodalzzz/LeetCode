@@ -11,12 +11,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0624-maximum-distance-in-arrays](https://github.com/seodalzzz/LeetCode/tree/master/0624-maximum-distance-in-arrays) |
 | [1252-break-a-palindrome](https://github.com/seodalzzz/LeetCode/tree/master/1252-break-a-palindrome) |
+| [2475-largest-palindromic-number](https://github.com/seodalzzz/LeetCode/tree/master/2475-largest-palindromic-number) |
 | [2816-lexicographically-smallest-palindrome](https://github.com/seodalzzz/LeetCode/tree/master/2816-lexicographically-smallest-palindrome) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/seodalzzz/LeetCode/tree/master/0001-two-sum) |
 | [0013-roman-to-integer](https://github.com/seodalzzz/LeetCode/tree/master/0013-roman-to-integer) |
+| [2475-largest-palindromic-number](https://github.com/seodalzzz/LeetCode/tree/master/2475-largest-palindromic-number) |
 ## Math
 |  |
 | ------- |
@@ -30,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/seodalzzz/LeetCode/tree/master/0013-roman-to-integer) |
 | [0647-palindromic-substrings](https://github.com/seodalzzz/LeetCode/tree/master/0647-palindromic-substrings) |
 | [1252-break-a-palindrome](https://github.com/seodalzzz/LeetCode/tree/master/1252-break-a-palindrome) |
+| [2475-largest-palindromic-number](https://github.com/seodalzzz/LeetCode/tree/master/2475-largest-palindromic-number) |
 | [2816-lexicographically-smallest-palindrome](https://github.com/seodalzzz/LeetCode/tree/master/2816-lexicographically-smallest-palindrome) |
 ## Stack
 |  |
@@ -99,4 +102,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/seodalzzz/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0647-palindromic-substrings](https://github.com/seodalzzz/LeetCode/tree/master/0647-palindromic-substrings) |
+## Counting
+|  |
+| ------- |
+| [2475-largest-palindromic-number](https://github.com/seodalzzz/LeetCode/tree/master/2475-largest-palindromic-number) |
 <!---LeetCode Topics End-->
