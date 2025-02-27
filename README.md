@@ -78,6 +78,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Linked List
 |  |
 | ------- |
+| [0019-remove-nth-node-from-end-of-list](https://github.com/seodalzzz/LeetCode/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/seodalzzz/LeetCode/tree/master/0021-merge-two-sorted-lists) |
 | [0061-rotate-list](https://github.com/seodalzzz/LeetCode/tree/master/0061-rotate-list) |
 | [0083-remove-duplicates-from-sorted-list](https://github.com/seodalzzz/LeetCode/tree/master/0083-remove-duplicates-from-sorted-list) |
@@ -96,6 +97,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/seodalzzz/LeetCode/tree/master/0005-longest-palindromic-substring) |
+| [0019-remove-nth-node-from-end-of-list](https://github.com/seodalzzz/LeetCode/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0061-rotate-list](https://github.com/seodalzzz/LeetCode/tree/master/0061-rotate-list) |
 | [0234-palindrome-linked-list](https://github.com/seodalzzz/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0647-palindromic-substrings](https://github.com/seodalzzz/LeetCode/tree/master/0647-palindromic-substrings) |
