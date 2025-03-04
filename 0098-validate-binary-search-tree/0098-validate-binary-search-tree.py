@@ -6,31 +6,26 @@
 #         self.right = right
 class Solution(object):
 
-    def dfs(self, root):
+    def dfs(self, root,):
         if(root==None):
-            return True , 99999999999,-99999999999
-        now_result=True
-        left_result=True
-        right_result=True
-        left_result, left_min1, right_max1=self.dfs(root.left)
-        right_result, left_min2, right_max2=self.dfs(root.right)
-        if(root.left!=None):
-            now_result=root.left.val<root.val
-            if(right_max1>=root.val):
-                left_result=False
-        if(root.right!=None):
-            now_result=now_result and root.right.val>root.val
-            if(left_min2<=root.val):
-                right_result=False
-        print(root.val,min(left_min1,left_min2,root.val),max(right_max1, right_max2, root.val))
-        return left_result and right_result and now_result, min(left_min1,left_min2,root.val), max(right_max1, right_max2, root.val)
-        
+            return 999999999999,-9999999999999, True
+        lmin,lmax,lresult=self.dfs(root.left)
+        rmin,rmax,rresult=self.dfs(root.right)
+        minn=min(lmin,rmin)
+        maxx=max(lmax,rmax)
+        result=lmax<root.val and rmin>root.val and lresult and rresult
+        return  min(minn,root.val), max(maxx,root.val), result
+
 
     def isValidBST(self, root):
         """
         :type root: Optional[TreeNode]
         :rtype: bool
         """
-        result, re_min, re_max=self.dfs(root)
-        return result 
+        # left->min,max 리턴받기
+        # right->min,max 리턴받기
+        # left->max > root.val 이거나 right -> min < root.val 이면 invalid
+        minn,maxx,result=self.dfs(root)
+        return result
+
         
