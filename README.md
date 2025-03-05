@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/seodalzzz/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0013-roman-to-integer](https://github.com/seodalzzz/LeetCode/tree/master/0013-roman-to-integer) |
+| [0131-palindrome-partitioning](https://github.com/seodalzzz/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [0409-longest-palindrome](https://github.com/seodalzzz/LeetCode/tree/master/0409-longest-palindrome) |
 | [0647-palindromic-substrings](https://github.com/seodalzzz/LeetCode/tree/master/0647-palindromic-substrings) |
 | [1252-break-a-palindrome](https://github.com/seodalzzz/LeetCode/tree/master/1252-break-a-palindrome) |
@@ -129,6 +130,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/seodalzzz/LeetCode/tree/master/0005-longest-palindromic-substring) |
+| [0131-palindrome-partitioning](https://github.com/seodalzzz/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [0647-palindromic-substrings](https://github.com/seodalzzz/LeetCode/tree/master/0647-palindromic-substrings) |
 ## Counting
 |  |
@@ -142,4 +144,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2299-merge-nodes-in-between-zeros](https://github.com/seodalzzz/LeetCode/tree/master/2299-merge-nodes-in-between-zeros) |
+## Backtracking
+|  |
+| ------- |
+| [0131-palindrome-partitioning](https://github.com/seodalzzz/LeetCode/tree/master/0131-palindrome-partitioning) |
 <!---LeetCode Topics End-->
