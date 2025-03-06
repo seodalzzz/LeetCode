@@ -1,149 +1,110 @@
-// #include <stdio.h>
-// #include <stdlib.h>
-
-// /**
-//  * Definition for singly-linked list.
-//  */
-// struct ListNode {
-//     int val;
-//     struct ListNode *next;
-// };
-
-// /**
-//  * Definition for a binary tree node.
-//  */
-// struct TreeNode {
-//     int val;
-//     struct TreeNode *left;
-//     struct TreeNode *right;
-// };
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
 
 struct ListNode* middleNode(struct ListNode* head) {
-    struct ListNode* first = head;
-    struct ListNode* second = head;
+    struct ListNode* first=head;
+    struct ListNode* second=head;
 
-    while (second != NULL && second->next != NULL) {
-        first = first->next;
-        second = second->next->next;
+    while(second!=NULL && second->next!=NULL){
+        first=first->next;
+        second=second->next->next;
     }
     return first;
 }
 
-struct ListNode* findlistprev(struct ListNode* head, struct ListNode* dst) {
-    if (head == NULL || head == dst) {
+struct TreeNode* insert(struct TreeNode* root, struct ListNode* curr){
+    struct TreeNode* treecurr=root;
+    struct TreeNode* treeprev=root;
+    // printf("%d",treecurr->val);
+    if(root==NULL){
+        root = (struct TreeNode*)malloc(sizeof(struct TreeNode));
+        root->val=curr->val;
+        root->left=NULL;
+        root->right=NULL;
+        printf("%d",root->val);
+        return root;
+    }
+    printf("%d",treecurr->val);    
+    while(treecurr!=NULL){
+        treeprev=treecurr;
+        if(treecurr->val<curr->val){
+            treecurr=treecurr->right;
+        }else{
+            treecurr=treecurr->left;
+        }
+    }
+    if(treeprev->val<curr->val){
+        treeprev->right=(struct TreeNode*)malloc(sizeof(struct TreeNode));
+        treeprev->right->val=curr->val;
+        treeprev->right->left=NULL;
+        treeprev->right->right=NULL;
+    }else{
+        treeprev->left=(struct TreeNode*)malloc(sizeof(struct TreeNode));
+        treeprev->left->val=curr->val;
+        treeprev->left->left=NULL;
+        treeprev->left->right=NULL;
+    }
+    return root;
+}
+
+struct ListNode* findlistprev(struct ListNode* head, struct ListNode* dst){
+    struct ListNode* curr=head;
+    if(head==NULL){
         return NULL;
     }
-    struct ListNode* curr = head;
-    while (curr->next != dst) {
-        curr = curr->next;
+    if(head==dst){
+        return NULL;
+    }
+    while(curr->next!=dst){
+        curr=curr->next;
     }
     return curr;
 }
 
-struct TreeNode* insert(struct TreeNode* root, struct ListNode* curr) {
-    struct TreeNode* treecurr = root;
-    struct TreeNode* treeprev = root;
-
-    if (root == NULL) {
-        root = (struct TreeNode*)malloc(sizeof(struct TreeNode));
-        root->val = curr->val;
-        root->left = NULL;
-        root->right = NULL;
+struct TreeNode* _help(struct TreeNode* root, struct ListNode* start){
+    if(start==NULL){
         return root;
     }
-
-    while (treecurr != NULL) {
-        treeprev = treecurr;
-        if (treecurr->val < curr->val) {
-            treecurr = treecurr->right;
-        } else {
-            treecurr = treecurr->left;
-        }
-    }
-
-    if (treeprev->val < curr->val) {
-        treeprev->right = (struct TreeNode*)malloc(sizeof(struct TreeNode));
-        treeprev->right->val = curr->val;
-        treeprev->right->left = NULL;
-        treeprev->right->right = NULL;
-    } else {
-        treeprev->left = (struct TreeNode*)malloc(sizeof(struct TreeNode));
-        treeprev->left->val = curr->val;
-        treeprev->left->left = NULL;
-        treeprev->left->right = NULL;
-    }
-    return root;
-}
-
-struct TreeNode* _help(struct TreeNode* root, struct ListNode* start) {
-    if (start == NULL) {
-        return root;
-    }
-    if (start->next == NULL) {
+    if(start->next==NULL){
         return insert(root, start);
     }
-
-    struct ListNode* mid = middleNode(start);
-    root = insert(root, mid);
-
-    struct ListNode* ll = findlistprev(start, mid);
-    if (ll != NULL) {
-        ll->next = NULL;
+    struct ListNode* mid=middleNode(start);
+    root=insert(root,mid);
+    struct ListNode* ls=start;
+    if(ls==mid){
+        ls=NULL;
     }
-
-    struct ListNode* ls = (start == mid) ? NULL : start;
-    struct ListNode* rs = mid->next;
-
-    root = _help(root, ls);
-    root = _help(root, rs);
-
+    struct ListNode* ll=findlistprev(start,mid);
+    if(ll!=NULL){
+        ll->next=NULL;
+    }
+    struct ListNode* rs=mid->next;
+    root= _help(root, ls);
+    root=_help(root, rs);
     return root;
 }
 
 struct TreeNode* sortedListToBST(struct ListNode* head) {
-    struct TreeNode* root = NULL;
-    root = _help(root, head);
-    return root;
-}
-
-// 중위 순회 (BST 확인용)
-void inorder(struct TreeNode* root) {
-    if (root == NULL) return;
-    inorder(root->left);
-    printf("%d ", root->val);
-    inorder(root->right);
-}
-
-// 리스트 생성 함수
-struct ListNode* createList(int arr[], int n) {
-    struct ListNode* head = NULL;
-    struct ListNode* temp = NULL;
-    for (int i = 0; i < n; i++) {
-        struct ListNode* newNode = (struct ListNode*)malloc(sizeof(struct ListNode));
-        newNode->val = arr[i];
-        newNode->next = NULL;
-        if (head == NULL) {
-            head = newNode;
-            temp = head;
-        } else {
-            temp->next = newNode;
-            temp = temp->next;
-        }
+    //mid 찾기
+    //tree넣기
+    struct TreeNode* root=NULL;
+    if(head==NULL){
+        return NULL;
     }
-    return head;
+    root=_help(root, head);
+    return root;
+    
 }
-
-// // 테스트 코드
-// int main() {
-//     int arr[] = {-10, -3, 0, 5, 9};
-//     int n = sizeof(arr) / sizeof(arr[0]);
-//     struct ListNode* head = createList(arr, n);
-
-//     struct TreeNode* root = sortedListToBST(head);
-
-//     printf("Inorder Traversal of BST: ");
-//     inorder(root);
-//     printf("\n");
-
-//     return 0;
-// }
