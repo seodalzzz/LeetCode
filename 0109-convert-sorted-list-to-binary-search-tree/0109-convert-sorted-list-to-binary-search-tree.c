@@ -1,18 +1,22 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// /**
+//  * Definition for singly-linked list.
+//  */
+// struct ListNode {
+//     int val;
+//     struct ListNode *next;
+// };
+
+// /**
+//  * Definition for a binary tree node.
+//  */
+// struct TreeNode {
+//     int val;
+//     struct TreeNode *left;
+//     struct TreeNode *right;
+// };
 
 struct ListNode* middleNode(struct ListNode* head) {
     struct ListNode* first = head;
@@ -36,33 +40,51 @@ struct ListNode* findlistprev(struct ListNode* head, struct ListNode* dst) {
     return curr;
 }
 
-void insert(struct TreeNode** root, struct ListNode* curr) {
-    if (*root == NULL) {
-        *root = (struct TreeNode*)malloc(sizeof(struct TreeNode));
-        (*root)->val = curr->val;
-        (*root)->left = NULL;
-        (*root)->right = NULL;
-        return;
+struct TreeNode* insert(struct TreeNode* root, struct ListNode* curr) {
+    struct TreeNode* treecurr = root;
+    struct TreeNode* treeprev = root;
+
+    if (root == NULL) {
+        root = (struct TreeNode*)malloc(sizeof(struct TreeNode));
+        root->val = curr->val;
+        root->left = NULL;
+        root->right = NULL;
+        return root;
     }
 
-    if (curr->val < (*root)->val) {
-        insert(&((*root)->left), curr);
-    } else {
-        insert(&((*root)->right), curr);
+    while (treecurr != NULL) {
+        treeprev = treecurr;
+        if (treecurr->val < curr->val) {
+            treecurr = treecurr->right;
+        } else {
+            treecurr = treecurr->left;
+        }
     }
+
+    if (treeprev->val < curr->val) {
+        treeprev->right = (struct TreeNode*)malloc(sizeof(struct TreeNode));
+        treeprev->right->val = curr->val;
+        treeprev->right->left = NULL;
+        treeprev->right->right = NULL;
+    } else {
+        treeprev->left = (struct TreeNode*)malloc(sizeof(struct TreeNode));
+        treeprev->left->val = curr->val;
+        treeprev->left->left = NULL;
+        treeprev->left->right = NULL;
+    }
+    return root;
 }
 
-void _help(struct TreeNode** root, struct ListNode* start) {
+struct TreeNode* _help(struct TreeNode* root, struct ListNode* start) {
     if (start == NULL) {
-        return;
+        return root;
     }
     if (start->next == NULL) {
-        insert(root, start);
-        return;
+        return insert(root, start);
     }
 
     struct ListNode* mid = middleNode(start);
-    insert(root, mid);
+    root = insert(root, mid);
 
     struct ListNode* ll = findlistprev(start, mid);
     if (ll != NULL) {
@@ -72,12 +94,56 @@ void _help(struct TreeNode** root, struct ListNode* start) {
     struct ListNode* ls = (start == mid) ? NULL : start;
     struct ListNode* rs = mid->next;
 
-    _help(root, ls);
-    _help(root, rs);
+    root = _help(root, ls);
+    root = _help(root, rs);
+
+    return root;
 }
 
 struct TreeNode* sortedListToBST(struct ListNode* head) {
     struct TreeNode* root = NULL;
-    _help(&root, head);
+    root = _help(root, head);
     return root;
 }
+
+// 중위 순회 (BST 확인용)
+void inorder(struct TreeNode* root) {
+    if (root == NULL) return;
+    inorder(root->left);
+    printf("%d ", root->val);
+    inorder(root->right);
+}
+
+// 리스트 생성 함수
+struct ListNode* createList(int arr[], int n) {
+    struct ListNode* head = NULL;
+    struct ListNode* temp = NULL;
+    for (int i = 0; i < n; i++) {
+        struct ListNode* newNode = (struct ListNode*)malloc(sizeof(struct ListNode));
+        newNode->val = arr[i];
+        newNode->next = NULL;
+        if (head == NULL) {
+            head = newNode;
+            temp = head;
+        } else {
+            temp->next = newNode;
+            temp = temp->next;
+        }
+    }
+    return head;
+}
+
+// // 테스트 코드
+// int main() {
+//     int arr[] = {-10, -3, 0, 5, 9};
+//     int n = sizeof(arr) / sizeof(arr[0]);
+//     struct ListNode* head = createList(arr, n);
+
+//     struct TreeNode* root = sortedListToBST(head);
+
+//     printf("Inorder Traversal of BST: ");
+//     inorder(root);
+//     printf("\n");
+
+//     return 0;
+// }
