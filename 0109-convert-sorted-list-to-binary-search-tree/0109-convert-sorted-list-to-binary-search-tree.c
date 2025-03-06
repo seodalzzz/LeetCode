@@ -1,22 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
-
 /**
  * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
  */
-// struct ListNode {
-//     int val;
-//     struct ListNode *next;
-// };
-
-// /**
-//  * Definition for a binary tree node.
-//  */
-// struct TreeNode {
-//     int val;
-//     struct TreeNode *left;
-//     struct TreeNode *right;
-// };
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
 
 struct ListNode* middleNode(struct ListNode* head) {
     struct ListNode* first = head;
@@ -112,18 +108,3 @@ struct ListNode* createList(int arr[], int n) {
     }
     return head;
 }
-
-// // 테스트 코드
-// int main() {
-//     int arr[] = {-10, -3, 0, 5, 9};
-//     int n = sizeof(arr) / sizeof(arr[0]);
-//     struct ListNode* head = createList(arr, n);
-
-//     struct TreeNode* root = sortedListToBST(head);
-
-//     printf("Inorder Traversal of BST: ");
-//     inorder(root);
-//     printf("\n");
-
-//     return 0;
-// }
