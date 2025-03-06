@@ -81,30 +81,3 @@ struct TreeNode* sortedListToBST(struct ListNode* head) {
     _help(&root, head);
     return root;
 }
-
-// 중위 순회 (BST 확인용)
-void inorder(struct TreeNode* root) {
-    if (root == NULL) return;
-    inorder(root->left);
-    printf("%d ", root->val);
-    inorder(root->right);
-}
-
-// 리스트 생성 함수
-struct ListNode* createList(int arr[], int n) {
-    struct ListNode* head = NULL;
-    struct ListNode* temp = NULL;
-    for (int i = 0; i < n; i++) {
-        struct ListNode* newNode = (struct ListNode*)malloc(sizeof(struct ListNode));
-        newNode->val = arr[i];
-        newNode->next = NULL;
-        if (head == NULL) {
-            head = newNode;
-            temp = head;
-        } else {
-            temp->next = newNode;
-            temp = temp->next;
-        }
-    }
-    return head;
-}
